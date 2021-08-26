@@ -82,7 +82,7 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
-    ffi (1.9.18)
+    ffi (1.15.3)
     foundation-rails (5.4.5.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -285,7 +285,7 @@ DEPENDENCIES
   valid_attribute
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.0.pre.2
