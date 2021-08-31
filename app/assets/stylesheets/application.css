@@ -17,44 +17,6 @@
 
  */
 
- body{
-   background-color: #B1C1E9;
- }
- .rock {
-   background-image: url(rock.gif);
-   height: 4em;
-   width: 8em;
-   background-size: 100%;
-   color: yellow;
-   margin-bottom: 0.5em;
-
- }
-
- .paper{
-   background-image: url(paper.jpg);
-   height: 4em;
-   width: 8em;
-   margin: auto;
-   background-size: 97%;
-   color: yellow;
-   margin-left: 2em;
-   margin-bottom: 0.5em;
-
- }
-
- .scissors{
-   background-image: url(scissors.jpg);
-   height: 4em;
-   width: 8em;
-   background-size: 100%;
-   color: orange;
-   margin-bottom: 0.5em;
-
- }
-
- h3{
-   text-align: center;
- }
 
  .playerOne{
    color: #34AD2B;
@@ -74,40 +36,18 @@
    margin-left: 1em;
  }
 
- .button{
-   margin: 2em;
-   margin-top: 0.5em;
-   margin-bottom: 1em;
- }
 
  .userInputBox{
    background-color: white;
    margin-top: 1em;
  }
+
  .page{
    overflow: auto;
  }
+ 
  .picture{
    width: 2em;
    height: 1.5em;
    margin-left: 0.7em;
  }
- .footer {
-  background-color: #E5473C;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  }
-
-.fa-github{
-  margin-right: 4em;
-  margin-top: 1em;
-  font-size: 1.6em;
-  color: black;
-}
-
-.fa-linkedin{
-  font-size: 1.6em
-}
