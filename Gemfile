@@ -15,6 +15,9 @@ gem 'foundation-rails'
 gem 'carrierwave'
 gem 'active_model_serializers', '<= 0.9.9'
 
+group :assets do
+  gem 'turbo-sprockets-rails3'
+ end
 
 group :development do
   gem 'listen', '~> 3.0.5'
