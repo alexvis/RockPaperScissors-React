@@ -1,10 +1,11 @@
 
-
 window.addEventListener("click", buttons)
 
 function buttons() {
-  let buttons = document.getElementsByTagName('button');
-  if (buttons.length !== 0) {
-    buttons[1].remove()
+
+  let button = document.getElementsByTagName('button');
+
+  if (button[1]) {
+    button[1].remove()
   }
 }
