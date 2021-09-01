@@ -23,6 +23,9 @@ const FriendGameUserTwo = (props) => {
           <div className="rock large-4 small-12 columns" >{props.rock}</div>
           <div className="paper large-4 small-12 columns" >{props.paper}</div>
           <div className="scissors large-4 small-12 columns" >{props.scissors}</div>
+          <button className="button" onClick={props.cleanOnClick}>
+            Start Over
+          </button>
         </div>
       </div>
 

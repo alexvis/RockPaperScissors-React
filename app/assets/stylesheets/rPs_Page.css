@@ -12,6 +12,7 @@ div.userInputBox {
 }
 
 div.panel {
+  background-color: #ffffff;
   display: block;
   width: 89%;
   height: auto;
@@ -44,21 +45,23 @@ div.panel div {
 
 .rock {
   background-image: url(rock.gif);
-
-  color: yellow;
-  border: 2px solid blue;
+  height: 252px !important;
+  width: 25% !important;
+  color: red;
 }
 
 .paper{
   background-image: url(paper.jpg);
-
+  height: 252px !important;
+  width: 25% !important;
   background-size: 97%;
   color: blue;
 }
 
 .scissors{
   background-image: url(scissors.jpg);
-
+  height: 252px !important;
+  width: 25% !important;
   color: orange;
 }
 
@@ -66,10 +69,16 @@ div.panel h3{
   text-align: center;
 }
 
+div.button-group {
+  width: 100% !important;
+}
 
 button.button{
+  width: 140px;
   margin: 2em;
   margin-top: 0.5em;
   margin-bottom: 1em;
-  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
 }

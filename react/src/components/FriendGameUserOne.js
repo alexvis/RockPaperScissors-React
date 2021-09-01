@@ -3,7 +3,6 @@ import React from 'react';
 const FrienGameUserOne = (props) => {
 
   let result
-
   if(props.resultGame === null){
     result =
       <div className="row">
@@ -12,7 +11,7 @@ const FrienGameUserOne = (props) => {
           <div className="rock large-4 small-12 columns" onClick={props.handleRockClickOne}></div>
           <div className="paper large-4 small-12 columns" onClick={props.handlePaperClickOne}></div>
           <div className="scissors large-4 small-12 columns" onClick={props.handleScissorsClickOne}></div>
-        </div>
+      </div>
       </div>
   } else {
       result =
@@ -22,6 +21,9 @@ const FrienGameUserOne = (props) => {
             <div className="rock large-4 small-12 columns" >{props.rock}</div>
             <div className="paper large-4 small-12 columns" >{props.paper}</div>
             <div className="scissors large-4 small-12 columns" >{props.scissors}</div>
+            <button className="button" onClick={props.cleanOnClick}>
+              Start Over
+            </button>
           </div>
         </div>
 
