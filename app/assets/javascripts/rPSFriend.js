@@ -5,8 +5,7 @@ function buttons() {
 
   let button = document.getElementsByTagName('button');
 
-  if (button.length === 2 ) {
-    debugger
+  if (button[1]) {
     button[1].remove()
   }
 }
