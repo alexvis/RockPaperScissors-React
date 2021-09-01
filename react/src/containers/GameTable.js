@@ -51,7 +51,16 @@ class GameTable extends React.Component {
     this.setState({scissors: null})
   }
 
+
+
   render(){
+    let startOverButton =
+        <div className="button-group">
+          <button className="button" onClick={this.cleanOnClick}>Start Over</button>
+        </div>
+
+
+
     let response
     if (this.state.computerInput === 1 && this.state.userInput === "r"){
         response =
@@ -59,6 +68,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="rock"></div>
             <h3>Tie!</h3>
+            {startOverButton}
         </div>
     } else if (this.state.computerInput === 1 && this.state.userInput === "p"){
         response =
@@ -66,6 +76,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="rock"></div>
             <h3>You Win!</h3>
+              {startOverButton}
           </div>
     } else if (this.state.computerInput === 1 && this.state.userInput === "s"){
       response =
@@ -73,6 +84,7 @@ class GameTable extends React.Component {
           <h3>Computer Choose</h3>
           <div className="rock"></div>
           <h3>You Lose!</h3>
+            {startOverButton}
         </div>
     } else if (this.state.computerInput === 2 && this.state.userInput === "r"){
       response =
@@ -80,6 +92,7 @@ class GameTable extends React.Component {
           <h3>Computer Choose</h3>
           <div className="paper"></div>
           <h3>You Lose!</h3>
+            {startOverButton}
         </div>
     } else if (this.state.computerInput === 2 && this.state.userInput === "p"){
         response =
@@ -87,6 +100,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="paper"></div>
             <h3>Tie!</h3>
+              {startOverButton}
           </div>
     } else if (this.state.computerInput === 2 && this.state.userInput === "s"){
         response =
@@ -94,6 +108,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="paper"></div>
             <h3>You Win!</h3>
+              {startOverButton}
           </div>
     } else if (this.state.computerInput === 3 && this.state.userInput === "r"){
         response =
@@ -101,6 +116,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="scissors"></div>
             <h3>You Win!</h3>
+              {startOverButton}
           </div>
     } else if (this.state.computerInput === 3 && this.state.userInput === "p"){
         response =
@@ -108,6 +124,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="scissors"></div>
             <h3>You Lose!</h3>
+              {startOverButton}
           </div>
     } else if (this.state.computerInput === 3 && this.state.userInput === "s"){
         response =
@@ -115,6 +132,7 @@ class GameTable extends React.Component {
             <h3>Computer Choose</h3>
             <div className="scissors"></div>
             <h3>Tie!</h3>
+              {startOverButton}
           </div>
     } else {
       response = null
@@ -127,9 +145,7 @@ class GameTable extends React.Component {
           <div className="paper large-12 columns" onClick={this.handlePaperClick}>{this.state.paper}</div>
           <div className="scissors large-12 columns" onClick={this.handleScissorsClick}>{this.state.scissors}</div>
         </div>
-        <div className="button-group">
-          <button className="button" onClick={this.cleanOnClick}>Start Over</button>
-        </div>
+
         {response}
       </div>
 

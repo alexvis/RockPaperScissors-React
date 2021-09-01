@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+div.userInputBox {
+  display: block;
+  width: 89%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+
+}
+
+div.panel {
+  background-color: #ffffff;
+  display: block;
+  width: 89%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+div.userInputBox div {
+  height: 252px;
+  width: 25%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 0.5em;
+  float: left !important;
+  margin: 4%;
+
+}
+
+div.panel div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 124px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rock {
+  background-image: url(rock.gif);
+  height: 252px !important;
+  width: 25% !important;
+  color: red;
+}
+
+.paper{
+  background-image: url(paper.jpg);
+  height: 252px !important;
+  width: 25% !important;
+  background-size: 97%;
+  color: blue;
+}
+
+.scissors{
+  background-image: url(scissors.jpg);
+  height: 252px !important;
+  width: 25% !important;
+  color: orange;
+}
+
+div.panel h3{
+  text-align: center;
+}
+
+div.button-group {
+  width: 100% !important;
+}
+
+button.button{
+  width: 140px;
+  margin: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}
