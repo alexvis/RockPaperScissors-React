@@ -140,10 +140,10 @@ class GameTable extends React.Component {
 
     return(
       <div>
-        <div className="userInputBox large-6 columns">
-          <div className="rock large-12 columns" onClick={this.handleRockClick}>{this.state.rock}</div>
-          <div className="paper large-12 columns" onClick={this.handlePaperClick}>{this.state.paper}</div>
-          <div className="scissors large-12 columns" onClick={this.handleScissorsClick}>{this.state.scissors}</div>
+        <div className="userInputBox">
+          <div className="rock" onClick={this.handleRockClick}>{this.state.rock}</div>
+          <div className="paper" onClick={this.handlePaperClick}>{this.state.paper}</div>
+          <div className="scissors" onClick={this.handleScissorsClick}>{this.state.scissors}</div>
         </div>
 
         {response}

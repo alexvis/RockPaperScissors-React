@@ -1,14 +1,41 @@
 @charset "UTF-8";
 
+div.top-bar{
+  height: 70px;
+}
+
+div.top-bar li {
+  margin-top: 9px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+li.home {
+  float: left;
+  width: 20%;
+  margin-left: 15px;
+
+}
+
+li.right:nth-child(2) {
+  margin-right: 25px;
+  margin-left: 0.5em;
+}
 
 div.userInputBox {
   display: block;
   width: 89%;
-  height: auto;
+  height: 400px;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 20px;
   text-align: center;
 
+}
+
+div.userInputBox.one {
+  height: 500px;
 }
 
 div.panel {
@@ -74,7 +101,9 @@ div.button-group {
 }
 
 button.button{
-  width: 140px;
+  font-size: 35px;
+  width: 240px;
+  height: 100px;
   margin: 2em;
   margin-top: 0.5em;
   margin-bottom: 1em;

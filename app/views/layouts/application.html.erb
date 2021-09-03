@@ -14,16 +14,15 @@
 
   <body>
     <div class="top-bar">
-
-      <%= link_to 'Home', root_path  %>
+      <li class="home"><%= link_to 'Home', root_path, class: "home"  %></li>
       <% if !user_signed_in?%>
-        <%= link_to 'Sign Up', new_user_registration_path, class: "right" %>
-        <%= link_to 'Sign in', user_session_path, class: "right" %>
+        <li class="right"><%= link_to 'Sign Up', new_user_registration_path, class: "right" %></li>
+        <li class="right"><%= link_to 'Sign in', user_session_path, class: "right" %></li>
       <% else %>
         <%= image_tag(current_user.profile_photo, class: 'picture') if current_user.profile_photo? %>
 
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "right" %>
-        <%= link_to 'Edit Account Info', edit_user_registration_path, class: "right" %>
+        <li class="right"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "right" %></li>
+        <li class="right"><%= link_to 'Edit Account', edit_user_registration_path, class: "right" %></li>
       <% end %>
     </div>
     <div class="page">

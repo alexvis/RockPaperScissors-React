@@ -7,22 +7,23 @@ const FriendGameUserTwo = (props) => {
   if(props.resultGame === null){
     result =
       <div className="row">
-        <div className="userInputBox large-12 medium-12 small-12 columns">
-        <h3 className="playerTwo">{props.playerTwo}</h3>
-          <div className="rock one large-4 small-12 columns" onClick={props.handleRockClickTwo}></div>
-          <div className="paper one large-4 small-12 columns" onClick={props.handlePaperClickTwo}></div>
-          <div className="scissors one large-4 small-12 columns" onClick={props.handleScissorsClickTwo}></div>
+        <div className="userInputBox two">
+          <h3 className="playerTwo">{props.playerTwo}</h3>
+          <div className="rock two" onClick={props.handleRockClickTwo}></div>
+          <div className="paper two" onClick={props.handlePaperClickTwo}></div>
+          <div className="scissors two" onClick={props.handleScissorsClickTwo}></div>
         </div>
       </div>
 
   } else {
     result =
+
       <div className="row">
-        <div className="userInputBox large-12 medium-12 small-12 columns">
-        <h3 className="playerTwo">{props.playerTwo}</h3>
-          <div className="rock large-4 small-12 columns" >{props.rock}</div>
-          <div className="paper large-4 small-12 columns" >{props.paper}</div>
-          <div className="scissors large-4 small-12 columns" >{props.scissors}</div>
+        <div className="userInputBox two">
+          <h3 className="playerTwo">{props.playerTwo}</h3>
+          <div className="rock two" >{props.rock}</div>
+          <div className="paper two" >{props.paper}</div>
+          <div className="scissors two" >{props.scissors}</div>
           <button className="button" onClick={props.cleanOnClick}>
             Start Over
           </button>
