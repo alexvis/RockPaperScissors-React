@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+/* Top bar style */
 div.top-bar{
   height: 70px;
 }
@@ -23,10 +25,11 @@ li.right:nth-child(2) {
   margin-left: 0.5em;
 }
 
+/* top single player box */
 div.userInputBox {
   display: block;
   width: 89%;
-  height: 400px;
+  height: 280px;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 20px;
@@ -35,7 +38,7 @@ div.userInputBox {
 }
 
 div.userInputBox.one {
-  height: 500px;
+  height: 440px;
 }
 
 div.panel {
@@ -49,7 +52,7 @@ div.panel {
 }
 
 div.userInputBox div {
-  height: 252px;
+  height: 200px;
   width: 25%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,14 +75,14 @@ div.panel div {
 
 .rock {
   background-image: url(rock.gif);
-  height: 252px !important;
+  height: 200px !important;
   width: 25% !important;
   color: red;
 }
 
 .paper{
   background-image: url(paper.jpg);
-  height: 252px !important;
+  height: 200px !important;
   width: 25% !important;
   background-size: 97%;
   color: blue;
@@ -87,7 +90,7 @@ div.panel div {
 
 .scissors{
   background-image: url(scissors.jpg);
-  height: 252px !important;
+  height: 200px !important;
   width: 25% !important;
   color: orange;
 }
@@ -102,8 +105,8 @@ div.button-group {
 
 button.button{
   font-size: 35px;
-  width: 240px;
-  height: 100px;
+  width: 225px;
+  height: 70px;
   margin: 2em;
   margin-top: 0.5em;
   margin-bottom: 1em;
